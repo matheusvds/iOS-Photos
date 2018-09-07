@@ -19,6 +19,7 @@
 		C6B04EBD2143285200AF0491 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; };
 		C6B04EBF2143286400AF0491 /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04EC321432C8800AF0491 /* ViewCode.swift */; };
+		C6B04EC621432D2100AF0491 /* MainViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04EC521432D2100AF0491 /* MainViewScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		C6B04EB32143272500AF0491 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		C6B04EB42143272500AF0491 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		C6B04EC321432C8800AF0491 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		C6B04EC521432D2100AF0491 /* MainViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 		C6B04EC021432AFD00AF0491 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
+				C6B04EC521432D2100AF0491 /* MainViewScreen.swift */,
 				C6B04E932142ECFE00AF0491 /* MainViewController.swift */,
 			);
 			path = Gallery;
@@ -272,6 +275,7 @@
 				C6B04E942142ECFE00AF0491 /* MainViewController.swift in Sources */,
 				C6B04E922142ECFE00AF0491 /* AppDelegate.swift in Sources */,
 				C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */,
+				C6B04EC621432D2100AF0491 /* MainViewScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
