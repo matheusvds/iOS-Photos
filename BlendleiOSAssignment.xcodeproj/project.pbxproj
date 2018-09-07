@@ -18,6 +18,7 @@
 		C6B04EBC214327DC00AF0491 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB32143272500AF0491 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6B04EBD2143285200AF0491 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; };
 		C6B04EBF2143286400AF0491 /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04EC321432C8800AF0491 /* ViewCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		C6B04EB22143272500AF0491 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		C6B04EB32143272500AF0491 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		C6B04EB42143272500AF0491 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		C6B04EC321432C8800AF0491 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		C6B04E902142ECFE00AF0491 /* BlendleiOSAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				C6B04EC121432C6E00AF0491 /* Common */,
 				C6B04EC021432AFD00AF0491 /* Gallery */,
 				C6B04E912142ECFE00AF0491 /* AppDelegate.swift */,
 				C6B04E982142ED0000AF0491 /* Assets.xcassets */,
@@ -146,6 +149,22 @@
 				C6B04E932142ECFE00AF0491 /* MainViewController.swift */,
 			);
 			path = Gallery;
+			sourceTree = "<group>";
+		};
+		C6B04EC121432C6E00AF0491 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04EC221432C7800AF0491 /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C6B04EC221432C7800AF0491 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04EC321432C8800AF0491 /* ViewCode.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +271,7 @@
 			files = (
 				C6B04E942142ECFE00AF0491 /* MainViewController.swift in Sources */,
 				C6B04E922142ECFE00AF0491 /* AppDelegate.swift in Sources */,
+				C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
