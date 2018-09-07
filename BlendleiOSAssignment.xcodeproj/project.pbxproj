@@ -13,6 +13,12 @@
 		C6B04E992142ED0000AF0491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6B04E982142ED0000AF0491 /* Assets.xcassets */; };
 		C6B04E9C2142ED0000AF0491 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6B04E9A2142ED0000AF0491 /* LaunchScreen.storyboard */; };
 		C6B04EA72142ED0000AF0491 /* BlendleiOSAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04EA62142ED0000AF0491 /* BlendleiOSAssignmentTests.swift */; };
+		C6B04EB82143279100AF0491 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EB22143272500AF0491 /* Nimble.framework */; };
+		C6B04EB92143279100AF0491 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EB32143272500AF0491 /* Quick.framework */; };
+		C6B04EBB214327DC00AF0491 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB22143272500AF0491 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6B04EBC214327DC00AF0491 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB32143272500AF0491 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6B04EBD2143285200AF0491 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; };
+		C6B04EBF2143286400AF0491 /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EB42143272500AF0491 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +31,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C6B04EBA214327A300AF0491 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6B04EBB214327DC00AF0491 /* Nimble.framework in CopyFiles */,
+				C6B04EBC214327DC00AF0491 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B04EBE2143285900AF0491 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C6B04EBF2143286400AF0491 /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C6B04E8E2142ECFD00AF0491 /* BlendleiOSAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlendleiOSAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B04E912142ECFE00AF0491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +66,9 @@
 		C6B04EA22142ED0000AF0491 /* BlendleiOSAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlendleiOSAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6B04EA62142ED0000AF0491 /* BlendleiOSAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendleiOSAssignmentTests.swift; sourceTree = "<group>"; };
 		C6B04EA82142ED0000AF0491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6B04EB22143272500AF0491 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		C6B04EB32143272500AF0491 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		C6B04EB42143272500AF0491 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B04EBD2143285200AF0491 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6B04EB82143279100AF0491 /* Nimble.framework in Frameworks */,
+				C6B04EB92143279100AF0491 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +98,7 @@
 				C6B04E902142ECFE00AF0491 /* BlendleiOSAssignment */,
 				C6B04EA52142ED0000AF0491 /* BlendleiOSAssignmentTests */,
 				C6B04E8F2142ECFD00AF0491 /* Products */,
+				C6B04EB12143272500AF0491 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +133,16 @@
 			path = BlendleiOSAssignmentTests;
 			sourceTree = "<group>";
 		};
+		C6B04EB12143272500AF0491 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04EB22143272500AF0491 /* Nimble.framework */,
+				C6B04EB32143272500AF0491 /* Quick.framework */,
+				C6B04EB42143272500AF0491 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +153,7 @@
 				C6B04E8A2142ECFD00AF0491 /* Sources */,
 				C6B04E8B2142ECFD00AF0491 /* Frameworks */,
 				C6B04E8C2142ECFD00AF0491 /* Resources */,
+				C6B04EBE2143285900AF0491 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -123,6 +171,7 @@
 				C6B04E9E2142ED0000AF0491 /* Sources */,
 				C6B04E9F2142ED0000AF0491 /* Frameworks */,
 				C6B04EA02142ED0000AF0491 /* Resources */,
+				C6B04EBA214327A300AF0491 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -359,6 +408,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BlendleiOSAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,6 +429,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BlendleiOSAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -394,6 +451,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BlendleiOSAssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -414,6 +475,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BlendleiOSAssignmentTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
