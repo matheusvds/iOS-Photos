@@ -114,8 +114,8 @@
 		C6B04E902142ECFE00AF0491 /* BlendleiOSAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				C6B04EC021432AFD00AF0491 /* Gallery */,
 				C6B04E912142ECFE00AF0491 /* AppDelegate.swift */,
-				C6B04E932142ECFE00AF0491 /* ViewController.swift */,
 				C6B04E952142ECFE00AF0491 /* Main.storyboard */,
 				C6B04E982142ED0000AF0491 /* Assets.xcassets */,
 				C6B04E9A2142ED0000AF0491 /* LaunchScreen.storyboard */,
@@ -141,6 +141,14 @@
 				C6B04EB42143272500AF0491 /* SnapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6B04EC021432AFD00AF0491 /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04E932142ECFE00AF0491 /* ViewController.swift */,
+			);
+			path = Gallery;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
