@@ -11,8 +11,8 @@ import SnapKit
 
 final class MainViewScreen: UIView {
     
-    init() {
-        super.init(frame: .zero)
+    override init(frame: CGRect = .zero) {
+        super.init(frame: frame)
         setupView()
     }
     
