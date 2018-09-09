@@ -23,6 +23,7 @@
 		C6B04ECA21455AFF00AF0491 /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B04EC821455AFF00AF0491 /* Nimble_Snapshots.framework */; };
 		C6B04ECB21455B0B00AF0491 /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EC721455AFF00AF0491 /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6B04ECC21455B0B00AF0491 /* Nimble_Snapshots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EC821455AFF00AF0491 /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6B04ED42145641900AF0491 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04ED32145641900AF0491 /* NavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		C6B04EC521432D2100AF0491 /* MainViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewScreen.swift; sourceTree = "<group>"; };
 		C6B04EC721455AFF00AF0491 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		C6B04EC821455AFF00AF0491 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
+		C6B04ED32145641900AF0491 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,8 +156,9 @@
 		C6B04EC021432AFD00AF0491 /* Gallery */ = {
 			isa = PBXGroup;
 			children = (
-				C6B04EC521432D2100AF0491 /* MainViewScreen.swift */,
-				C6B04E932142ECFE00AF0491 /* MainViewController.swift */,
+				C6B04ED12145635800AF0491 /* ViewControllers */,
+				C6B04ED02145634F00AF0491 /* Datasources */,
+				C6B04ECF2145634600AF0491 /* Views */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 		C6B04ECD2145628D00AF0491 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C6B04ED2214563CA00AF0491 /* ViewController */,
 				C6B04EC221432C7800AF0491 /* Protocols */,
 				C6B04ECE2145629600AF0491 /* Essentials */,
 			);
@@ -185,6 +189,37 @@
 				C6B04E9D2142ED0000AF0491 /* Info.plist */,
 			);
 			path = Essentials;
+			sourceTree = "<group>";
+		};
+		C6B04ECF2145634600AF0491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04EC521432D2100AF0491 /* MainViewScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C6B04ED02145634F00AF0491 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		C6B04ED12145635800AF0491 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04E932142ECFE00AF0491 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C6B04ED2214563CA00AF0491 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C6B04ED32145641900AF0491 /* NavigationController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +325,7 @@
 			files = (
 				C6B04E942142ECFE00AF0491 /* MainViewController.swift in Sources */,
 				C6B04E922142ECFE00AF0491 /* AppDelegate.swift in Sources */,
+				C6B04ED42145641900AF0491 /* NavigationController.swift in Sources */,
 				C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */,
 				C6B04EC621432D2100AF0491 /* MainViewScreen.swift in Sources */,
 			);
