@@ -24,6 +24,7 @@
 		C6B04ECB21455B0B00AF0491 /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EC721455AFF00AF0491 /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6B04ECC21455B0B00AF0491 /* Nimble_Snapshots.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6B04EC821455AFF00AF0491 /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C6B04ED42145641900AF0491 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04ED32145641900AF0491 /* NavigationController.swift */; };
+		C6B04ED62145652200AF0491 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B04ED52145652200AF0491 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		C6B04EC721455AFF00AF0491 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		C6B04EC821455AFF00AF0491 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		C6B04ED32145641900AF0491 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		C6B04ED52145652200AF0491 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				C6B04ECD2145628D00AF0491 /* Shared */,
 				C6B04EC021432AFD00AF0491 /* Gallery */,
+				C6B04E9D2142ED0000AF0491 /* Info.plist */,
 			);
 			path = BlendleiOSAssignment;
 			sourceTree = "<group>";
@@ -186,7 +189,6 @@
 			children = (
 				C6B04E912142ECFE00AF0491 /* AppDelegate.swift */,
 				C6B04E982142ED0000AF0491 /* Assets.xcassets */,
-				C6B04E9D2142ED0000AF0491 /* Info.plist */,
 			);
 			path = Essentials;
 			sourceTree = "<group>";
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				C6B04ED32145641900AF0491 /* NavigationController.swift */,
+				C6B04ED52145652200AF0491 /* TabBarController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				C6B04E942142ECFE00AF0491 /* MainViewController.swift in Sources */,
 				C6B04E922142ECFE00AF0491 /* AppDelegate.swift in Sources */,
 				C6B04ED42145641900AF0491 /* NavigationController.swift in Sources */,
+				C6B04ED62145652200AF0491 /* TabBarController.swift in Sources */,
 				C6B04EC421432C8800AF0491 /* ViewCode.swift in Sources */,
 				C6B04EC621432D2100AF0491 /* MainViewScreen.swift in Sources */,
 			);

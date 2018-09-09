@@ -11,7 +11,8 @@ import UIKit
 class MainViewController: UIViewController {
 
     override func loadView() {
-        
+        let mainView = MainViewScreen()
+        self.view = mainView
     }
 }
 
