@@ -11,6 +11,20 @@ import SnapKit
 
 final class MainViewScreen: UIView {
     
+    lazy var collectionView: UICollectionView = {
+        let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: flowLayout)
+        collectionView.backgroundColor = .white
+        return collectionView
+    }()
+    
+    lazy var flowLayout: UICollectionViewFlowLayout = {
+        let flowLayout = UICollectionViewFlowLayout()
+        flowLayout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        flowLayout.minimumInteritemSpacing = 15
+        flowLayout.minimumLineSpacing = 15
+        return flowLayout
+    }()
+    
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
         setupView()
@@ -24,15 +38,21 @@ final class MainViewScreen: UIView {
 
 extension MainViewScreen: ViewCode {
     func buildViewHierarchy() {
-        
+        self.addSubview(self.collectionView)
     }
     
     func setupConstraints() {
-        
+        self.collectionView.snp.makeConstraints { (make) in
+            make.left.equalTo(self)
+            make.right.equalTo(self)
+            make.top.equalTo(self)
+            make.bottom.equalTo(self)
+        }
     }
     
     func setupAdditionalConfiguration() {
-        backgroundColor = .gray
+        self.backgroundColor = .gray
+        self.collectionView.backgroundColor = .yellow
     }
     
     
