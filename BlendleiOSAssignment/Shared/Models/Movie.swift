@@ -10,6 +10,6 @@ import Foundation
 import UIKit
 
 struct Movie : Decodable {
-    let id : Int?
-    let poster_path: String?
+    let id : Int
+    let poster_path: String
 }

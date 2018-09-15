@@ -19,9 +19,9 @@ final class MainViewScreen: UIView {
     
     lazy var flowLayout: UICollectionViewFlowLayout = {
         let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
-        flowLayout.minimumInteritemSpacing = 15
-        flowLayout.minimumLineSpacing = 15
+        flowLayout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        flowLayout.minimumInteritemSpacing = 5
+        flowLayout.minimumLineSpacing = 5
         return flowLayout
     }()
     

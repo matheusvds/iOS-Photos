@@ -9,7 +9,7 @@
 import Foundation
 
 protocol BaseClient: APIClient {
-    func getMovieImages(from movieFeedType: TheMovieDBEndPoint, completion: @escaping (Result<MovieFeedResult?>) -> Void)
+    func getMovies(from movieFeedType: TheMovieDBEndPoint, completion: @escaping (Result<MovieFeedResult?>) -> Void)
 }
 
 class MovieClient: BaseClient {
@@ -24,7 +24,7 @@ class MovieClient: BaseClient {
         self.init(session: .shared)
     }
 
-    func getMovieImages(from endpoint: TheMovieDBEndPoint, completion: @escaping (Result<MovieFeedResult?>) -> Void) {
+    func getMovies(from endpoint: TheMovieDBEndPoint, completion: @escaping (Result<MovieFeedResult?>) -> Void) {
         fetch(with: endpoint.request, decode: { (json) -> MovieFeedResult? in
             guard let movieFeedResult = json as? MovieFeedResult else { return  nil }
             return movieFeedResult
