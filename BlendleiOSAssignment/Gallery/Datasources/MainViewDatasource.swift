@@ -40,7 +40,6 @@ class MainviewDatasource: NSObject {
     }
     
     func requestMovies() {
-        print(page)
         movieClient.getMovies(from: .popular(page: page)) { results in
             switch results {
             case .success(let result):
