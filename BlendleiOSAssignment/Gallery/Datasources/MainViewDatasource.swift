@@ -13,6 +13,7 @@ class MainviewDatasource: NSObject {
     var listMovies: [Movie]
     var collectionView: UICollectionView
     var movieClient: BaseClient
+    var page: Int = 1
     
     init(listMovies: [Movie], collectionView: UICollectionView, client: BaseClient = MovieClient()) {
         self.movieClient = client
@@ -39,13 +40,15 @@ class MainviewDatasource: NSObject {
     }
     
     func requestMovies() {
-        movieClient.getMovies(from: .popular(page: 1)) { results in
+        print(page)
+        movieClient.getMovies(from: .popular(page: page)) { results in
             switch results {
             case .success(let result):
                 guard let popularMovies = result?.results else { return }
                 self.setMovies(movies: popularMovies)
+                self.page += 1
             case .failure(let error):
-                print("\(error)")
+                print(error.localizedDescription)
             }
         }
     }
@@ -56,7 +59,7 @@ class MainviewDatasource: NSObject {
         }
     }
 }
-
+//MARK: - CollectionView Datasource
 extension MainviewDatasource: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -72,7 +75,7 @@ extension MainviewDatasource: UICollectionViewDataSource {
         return UICollectionViewCell()
     }
 }
-
+//MARK: - CollectionView DelegateFlowLayout
 extension MainviewDatasource:  UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -81,5 +84,12 @@ extension MainviewDatasource:  UICollectionViewDelegateFlowLayout {
         let height = UIScreen.main.bounds.height / 4
         
         return CGSize(width: width, height: height);
+    }
+}
+extension MainviewDatasource: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        if indexPath.row == self.listMovies.count - 1 {
+            requestMovies()
+        }
     }
 }

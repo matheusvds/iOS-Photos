@@ -13,7 +13,6 @@ final class MainViewScreen: UIView {
     
     lazy var collectionView: UICollectionView = {
         let collectionView = UICollectionView(frame: self.frame, collectionViewLayout: flowLayout)
-        collectionView.backgroundColor = .white
         return collectionView
     }()
     
@@ -51,8 +50,8 @@ extension MainViewScreen: ViewCode {
     }
     
     func setupAdditionalConfiguration() {
-        self.backgroundColor = .gray
-        self.collectionView.backgroundColor = .yellow
+        self.backgroundColor = .white
+        self.collectionView.backgroundColor = .white
     }
     
     

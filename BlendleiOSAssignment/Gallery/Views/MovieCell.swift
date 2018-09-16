@@ -13,14 +13,11 @@ class MovieCell: UICollectionViewCell {
     
     lazy var thumbMovie: UIImageView = {
         let view = UIImageView(frame: .zero)
-        view.contentMode = UIViewContentMode.scaleToFill
-        view.backgroundColor = .green
         return view
     }()
     
     lazy var loading: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(frame: .zero)
-        view.backgroundColor = UIColor(red: 247/255.0, green: 206/255.0, blue: 91/255.0, alpha: 1)
         return view
     }()
     
@@ -39,8 +36,9 @@ class MovieCell: UICollectionViewCell {
     }
     
     func fill(movie: Movie) {
+        guard let imagePath = movie.poster_path else { return }
         self.loading.startAnimating()
-        guard let url = URL(string: "\(TheMovieDBEndPoint.popular(page: 0).baseImg)\(movie.poster_path)") else {
+        guard let url = URL(string: "\(TheMovieDBEndPoint.popular(page: 0).baseImg)\(imagePath)") else {
             self.loading.stopAnimating()
             return
         }
@@ -69,5 +67,12 @@ extension MovieCell: ViewCode {
             make.left.top.right.equalToSuperview()
             make.bottom.equalTo(self.snp.bottom)
         }
+    }
+    
+    func setupAdditionalConfiguration() {
+        thumbMovie.contentMode = UIViewContentMode.scaleToFill
+        thumbMovie.backgroundColor = .clear
+        loading.backgroundColor = .lightGray
+
     }
 }
