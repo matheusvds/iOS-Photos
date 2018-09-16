@@ -26,7 +26,7 @@ class MainViewScreenSpec: QuickSpec {
             }
             
             it("need to have the look and feel") {
-                expect(self.sut) == recordSnapshot("mainViewScreen")
+                expect(self.sut) == snapshot("mainViewScreen")
             }
         }
     }
