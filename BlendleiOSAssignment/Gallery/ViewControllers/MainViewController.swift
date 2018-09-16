@@ -28,7 +28,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         self.setupDatasourceAndDelegates()
         self.requestMovies()
-        self.title = "Movies"
+        self.title = "Photos"
     }
     
     override func viewDidAppear(_ animated: Bool) {
